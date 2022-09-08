@@ -2,7 +2,7 @@
 
 def add(num_str):
   def add(num_str):
-  # code for test case 3
+  # code for test case 6
   Sum = 0
   for i in range(len(arr)):
     if arr[i].isdigit():
