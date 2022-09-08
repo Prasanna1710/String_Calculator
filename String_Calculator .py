@@ -10,6 +10,34 @@ def addString(num_str):
     return 0
   elif num_str.isdigit():
     return int(num_str)
+  else:
+    sum = 0
+    delimiter = ","  
+              
+    if num_str.find('\n') != -1 and num_str.find(',') != -1:
+      numList = []
+      str1 = num_str.split('\n')   
+      for s in str1:
+        if "," in s:
+          x = s.split(',')
+            for i in x:
+              numList.append(int(i))
+        else:
+          numList.append(int(s))
+            
+          return add(numList)
+        
+    elif num_str.find('\n') != -1:
+      delimiter = '\n'    
+        
+    numbers = num_str.split(delimiter)
+    return addNumbers(numbers)
+  
+  
+  
+  
+  
+#  Add numbers function
 def add(num_str):
   sum = 0
   flag = 0
