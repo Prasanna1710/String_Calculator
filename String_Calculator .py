@@ -13,7 +13,7 @@ def add(num_str):
       raise Exception('Only lowercase alphabets allowed')
     elif int(num_str[i]) < 0:
       flag = 1
-      negative_nums += num_str[i] + ' '
-  if flag == 1:
+      negative_nums += num_str[i]
+      if flag == 1:
       raise Exception('Negative numbers not allowed, negative numbers are' + negative_nums)
   return Sum
