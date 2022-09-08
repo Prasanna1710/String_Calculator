@@ -15,5 +15,6 @@ def add(num_str):
       flag = 1
       negative_nums += num_str[i] + ' '
   if flag == 1:
+    # in test case 4 we are already taking note of negative number and showing it in message here we are taking all negative numbers and showing them
       raise Exception('Negative numbers not allowed, negative numbers are' + negative_nums)
   return Sum
