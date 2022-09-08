@@ -9,6 +9,12 @@ class TestString_Calculator(unittest.TestCase):
 
     def setUp(self):
         pass
+    
+    def test_addString(self):
+        # test case where we return zero for blanck input string
+        self.assertEqual(String_Calculator.addString(''), 0)
+        self.assertEqual(String_Calculator.addString('1'), 1)
+        self.assertEqual(String_Calculator.addString('2'), 2)
 
       
       
