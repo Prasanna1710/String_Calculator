@@ -7,7 +7,7 @@ def String_to_array(str):
         if str[i] == '\n':
             continue
         if str[i].isdigit():
-            if i+1 <= len(str)-1 and str[i+1].isdigit:
+            if i+1 <= len(str)-1 and str[i+1].isdigit():
                 arr.append(str[i:i+2])
                 i = i+1
             else:
